@@ -9,9 +9,28 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import { textAlign } from '@material-ui/system';
 import { Table } from 'reactstrap';
+import axios from 'axios';
 
 
 class nrpm_main extends React.Component {
+    state={
+        prop: null
+      }
+      componentDidMount() {
+        this.getdata();
+      }
+      getdata = () => {
+        const store = configureStore();
+        const token = store.getState().auth.token;
+          axios.get(`http://localhost:5025/v1/Search/ProposalList`,
+          { headers: { 
+            Authorization: 'Bearer'+" "+token+''   } 
+                })
+          .then(res => {
+            this.setState({prop : res.data });;
+            console.log("data",test);
+          })
+      }
     render() {
         const store = configureStore();
         const authUser = JSON.parse(store.getState().auth.authUser);
@@ -59,6 +78,19 @@ class nrpm_main extends React.Component {
                                                             <td style={{ textAlign: "center", verticalAlign: "middle" }}><b>คชจ.R&amp;D</b></td><td align="center"><b>บุคลากร</b></td>
                                                             <td style={{ textAlign: "center", verticalAlign: "middle" }}><b>นักวิจัย</b></td><td align="center"><b>ผู้ช่วยนักวิจัย</b></td>
                                                             <td style={{ textAlign: "center", verticalAlign: "middle" }}><b>ผู้ทำงานสนับสนุนการวิจัย</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                        <td>1</td>
+                                                            <td>บริษัท/อื่นๆ</td>
+                                                            <td>ภาคเอกชน</td>
+                                                            <td>กองประเมินผลจัดการความรู้การวิจัย (กปจ.)</td>
+                                                            <td>14</td>
+                                                            <td></td>
+                                                            <td>5,400,000</td>
+                                                            <td>5,400,000</td>
+                                                            <td>18</td>
+                                                            <td>18</td>
+                                                            <td></td>
                                                         </tr>
                                                     </tbody>
                                                 </Table>

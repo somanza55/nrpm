@@ -48,10 +48,21 @@ class App extends React.Component {
             <div className="app-main-content">
               <Switch>
                 <Route path={`${match.url}/sample-page`} component={asyncComponent(() => import('./routes/SamplePage'))}/>
-                <Route path={`${match.url}/nrpm_main`} component={asyncComponent(() => import('./routes/nrpm/nrpm_main'))}/>
+                <Route path={`${match.url}/nrpm_main`} component={asyncComponent(() => import('./routes/nrpm_main'))}/>
                 <Route path={`${match.url}/RND_Manageimport`} component={asyncComponent(() => import('./routes/RND_Manageimport'))}/>
                 <Route path={`${match.url}/RND_Summaryimport`} component={asyncComponent(() => import('./routes/RND_Summaryimport'))}/>
                 <Route path={`${match.url}/RnD_Management`} component={asyncComponent(() => import('./routes/RnD_Management'))}/>
+                <Route path={`${match.url}/RnDposition`} component={asyncComponent(() => import('./routes/RnDposition'))}/>
+                <Route path={`${match.url}/RnDAllowance`} component={asyncComponent(() => import('./routes/RnDAllowance'))}/>
+                <Route path={`${match.url}/RnDPeriodAge`} component={asyncComponent(() => import('./routes/RnDPeriodAge'))}/>
+                <Route path={`${match.url}/RnD_ManageSalary`} component={asyncComponent(() => import('./routes/RnD_ManageSalary'))}/>
+                <Route path={`${match.url}/RnD_ManageFTE`} component={asyncComponent(() => import('./routes/RnD_ManageFTE'))}/>
+                <Route path={`${match.url}/RnDThesisPrivateBG`} component={asyncComponent(() => import('./routes/RnDThesisPrivateBG'))}/>
+                <Route path={`${match.url}/RnD_Department`} component={asyncComponent(() => import('./routes/RnD_Department'))}/>
+                <Route path={`${match.url}/RnD_Faculty`} component={asyncComponent(() => import('./routes/RnD_Faculty'))}/>
+                <Route path={`${match.url}/Department_Coordinator`} component={asyncComponent(() => import('./routes/Department_Coordinator'))}/>
+                <Route path={`${match.url}/Department_CoordinatorUI`} component={asyncComponent(() => import('./routes/Department_CoordinatorUI'))}/>
+                <Route path={`${match.url}/RnD_ReportList`} component={asyncComponent(() => import('./routes/Report/RnD_ReportList'))}/>
                 <Route component={asyncComponent(() => import('components/Error404'))}/>
               </Switch>
             </div>

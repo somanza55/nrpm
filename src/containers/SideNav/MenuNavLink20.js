@@ -147,28 +147,28 @@ class MenuNavLink extends Component {
                         <NavLink className="prepend-icon" to="/main/RnD_Management">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.ค้นหาข้อมูล" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnDposition">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการตำแหน่งทางวิชาการ" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnDAllowance">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการค่าตอบแทน" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnDPeriodAge">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการช่วงอายุ" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnD_ManageSalary">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการเงินเดือน" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnD_ManageFTE">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการFTE" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnDThesisPrivateBG">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการทุนส่วนตัวของวิทยานิพนธ์" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnD_Department">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการประเภทหน่วยงาน" /></span>
                         </NavLink>
-                        <NavLink className="prepend-icon" to="/main/Projectbin">
+                        <NavLink className="prepend-icon" to="/main/RnD_Faculty">
                             <i className="zmdi zmdi-chevron-right" /><span className="nav-text"><IntlMessages id="เมนู.จัดการกลุ่มหน่วนงานย่อย" /></span>
                         </NavLink>
                         </li>
@@ -185,7 +185,7 @@ class MenuNavLink extends Component {
                 <ul className="sub-menu">
                     <li>
                         <li className="nav-menu">
-                        <NavLink className="prepend-icon" to="/main/ProposalManage">
+                        <NavLink className="prepend-icon" to="/main/RnD_ReportList">
                         <i className="zmdi zmdi-chevron-right" /><IntlMessages id="ระบบรายงาน.รายงานสรุปข้อมูล" />
                         </NavLink>
                         <NavLink className="prepend-icon" to="/main/Projectbin">
@@ -195,7 +195,7 @@ class MenuNavLink extends Component {
                     </li>
                 </ul>
                 <li className="nav-menu">
-                <NavLink className="prepend-icon" to="/main/nrpm/nrpm_main">
+                <NavLink className="prepend-icon" to="/main/Department_Coordinator">
                     <i className="zmdi zmdi-file zmdi-hc-fw" />
                     <span className="nav-text">
                         <IntlMessages id="จัดการเจ้าหน้าที่" />
